@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  background-color: #FDFDFD;
+  padding-bottom: 55px;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+}
+
+.footer {
+  background: black;
+  color: white;
+  padding: 15px 20px;
+  margin-top: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-links a:hover {
+  color: blue;
+}

@@ -1,0 +1,157 @@
+.dashboard, .balance {
+  width: 500px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-section {
+  display: flex;
+  gap: 20px;
+}
+
+h1 {
+  margin-top: -5px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.balance h1 {
+  margin-top: 55px;
+}
+
+/***FORM ELEMENTS****/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+}
+
+.form button {
+  padding: 10px 15px;
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #1E40AF;
+}
+
+.form select, .controls select, .search-bar {
+  padding: 10px;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  width: 400px;
+}
+
+/***FORM ELEMENTS****/
+
+/****TRANSACTION LIST****/
+.transactionlist {
+  width: 1020px; 
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.empty-message {
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  color: grey;
+  font-style: italic;
+  text-align: center;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #F9FAFB;
+  border-left: 5px solid transparent;
+}
+
+.transaction-item .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  font-weight: 500;
+}
+
+.info {
+  font-size: 15px;
+  color: grey;
+}
+
+.transaction-item .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.amount {
+  font-weight: bold;
+}
+
+.transaction-item.income {
+  border-left: 5px solid green;
+}
+
+.transaction-item.income .amount {
+  color: green;
+}
+
+.transaction-item.expense {
+  border-left: 5px solid red;
+}
+
+.transaction-item.expense .amount {
+  color: red;
+}
+
+.transaction-item button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/****TRANSACTION LIST****/
+

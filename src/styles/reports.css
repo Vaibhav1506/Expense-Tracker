@@ -1,0 +1,59 @@
+.reports-container {
+  padding: 20px;
+}
+
+.report-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.income {
+  color: green;
+}
+
+.expense {
+  color: red;
+}
+
+.stats {
+  font-size: 25px; 
+  font-weight: bold;
+}
+
+.daily-reports {
+  margin-top: 20px;
+}
+
+.day-group {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.day-group h3 {
+  margin-bottom: 10px;
+}
+
+.day-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+abbr {
+  text-decoration: none;
+  border-bottom: none;
+  cursor: help;
+}
