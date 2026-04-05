@@ -18,7 +18,7 @@
 
     return (
       <div className = "app-wrapper">
-      <BrowserRouter>
+      <BrowserRouter basename = "/Expense-Tracker">
           <Navbar/>
         <div className="app-container">
           <Routes>
