@@ -1,5 +1,5 @@
   import React, {useState, useEffect} from 'react';
-  import {BrowserRouter, Routes, Route} from 'react-router-dom';
+  import {HashRouter, Routes, Route} from 'react-router-dom';
   import Dashboard from './pages/Dashboard';
   import About from './pages/About';
   import Reports from './pages/Reports';
@@ -18,16 +18,16 @@
 
     return (
       <div className = "app-wrapper">
-      <BrowserRouter basename = "/Expense-Tracker">
-          <Navbar/>
+      <HashRouter basename="/Expense-Tracker">
+        <Navbar/>
         <div className="app-container">
           <Routes>
-            <Route path="/" element={<Dashboard transactions = {transactions} setTransactions = {setTransactions}/>}/>
+            <Route path="/" element={<Dashboard transactions={transactions} setTransactions={setTransactions}/>}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/reports" element={<Reports transactions = {transactions}/>}/>
+            <Route path="/reports" element={<Reports transactions={transactions}/>}/>
           </Routes>
         </div>
-      </BrowserRouter>
+      </HashRouter>
         <footer className="footer">
           <div className="footer-content">
             <p>Contact</p>
