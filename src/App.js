@@ -18,7 +18,7 @@
 
     return (
       <div className = "app-wrapper">
-      <BrowserRouter basename="/Expense-Tracker-React-JS-Demo">
+      <BrowserRouter>
           <Navbar/>
         <div className="app-container">
           <Routes>
