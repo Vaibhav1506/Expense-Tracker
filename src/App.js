@@ -18,7 +18,7 @@
 
     return (
       <div className = "app-wrapper">
-      <HashRouter basename="/Expense-Tracker">
+      <HashRouter>
         <Navbar/>
         <div className="app-container">
           <Routes>
