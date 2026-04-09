@@ -100,22 +100,22 @@ function Reports({transactions}) {
                 <div>
                     <div style={{display: "flex", justifyContent: "center", marginBottom: "50px" }}>
                         <ResponsiveContainer width="70%" height={300}>
-                        <LineChart data={lineData} margin={{ top: 20, right: 30, left: 20, bottom: 50 }}>
-                            
-                            <CartesianGrid strokeDasharray="3 3"/>
+                            <LineChart data={lineData} margin={{ top: 20, right: 30, left: 20, bottom: 50 }}>
+                                
+                                <CartesianGrid strokeDasharray="3 3"/>
 
-                            <XAxis dataKey="date" angle={-30} textAnchor="end" interval={0}/>
+                                <XAxis dataKey="date" angle={-30} textAnchor="end" interval={0}/>
 
-                            <YAxis tickFormatter={(value) => `₹${value}`}/>
+                                <YAxis tickFormatter={(value) => `₹${value}`}/>
 
-                            <Tooltip formatter={(value) => `₹ ${value}`}/>
-                            <Legend verticalAlign = "top" align = "center"/>
+                                <Tooltip formatter={(value) => `₹ ${value}`}/>
+                                <Legend verticalAlign = "top" align = "center"/>
 
-                            <Line type="monotone" dataKey="income" stroke="green" strokeWidth={2}/>
+                                <Line type="monotone" dataKey="income" stroke="green" strokeWidth={2}/>
 
-                            <Line type="monotone" dataKey="expense" stroke="red" strokeWidth={2}/>
-                        </LineChart>
-                    </ResponsiveContainer>
+                                <Line type="monotone" dataKey="expense" stroke="red" strokeWidth={2}/>
+                            </LineChart>
+                        </ResponsiveContainer>
                     </div>
 
                     <div className="reports-container">
